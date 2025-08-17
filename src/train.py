@@ -77,8 +77,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     train_loader, val_loader, test_loader = Dataloader(
-        ai_dir=args.ai_dir,
-        real_dir=args.real_dir,
+        hf_dataset="Hemg/AI-Generated-vs-Real-Images-Datasets",
         split=args.split,
         seed = args.seed,
         model_id = args.model_id,
