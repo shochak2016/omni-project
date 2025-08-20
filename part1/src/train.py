@@ -23,8 +23,6 @@ from data.dataloader import Dataloader
 def parse_args():
     p = argparse.ArgumentParser(description="vit project")
 
-    p.add_argument("--ai-dir", type=str, required=True)
-    p.add_argument("--real-dir", type=str, required=True)
     p.add_argument("--batch-size", type=int, default=128)
     p.add_argument("--num-workers", type=int, default=8)
     p.add_argument("--split", nargs=3, type=float, metavar=("TRAIN","VAL","TEST"))
